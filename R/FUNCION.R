@@ -23,10 +23,24 @@ PERM2020_1OCOL<- data.frame(read_excel("TABLAS.xlsx", sheet = "PERM2020_1OCOL")
 PERM2020_2OCOL<- data.frame(read_excel("TABLAS.xlsx", sheet = "PERM2020_2OCOL")
 )
 
+
+
+
 usethis::use_data(PERM2020_1OIND, PERM2020_1OIND, PERM2020_1OIND, PERM2020_1OIND,
                   overwrite = TRUE, internal = FALSE)
 
 
+
+PERM2000_CART<- data.frame(read_excel("TABLAS.xlsx", sheet = "PERM2000_CART")
+)
+
+usethis::use_data(PERM2000_CART, overwrite = TRUE)
+
+
+PERM2000_NEWCONTR<- data.frame(read_excel("TABLAS.xlsx", sheet = "PERM2000_NEWCONTR")
+)
+
+usethis::use_data(PERM2000_NEWCONTR, overwrite = TRUE)
 
 ### TABLAS GENERACIONALES SOLO CON VALORES LX
 #'@export
